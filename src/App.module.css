@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+}
+.gap10 {
+  gap: 10px;
+}
+
+.task {
+  width: 300px;
+  border: 3px solid #000000;
+  margin-bottom: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.zero {
+  background: #ffffff;
+}
+
+.low {
+  background: #ffd7b5;
+}
+
+.middle {
+  background: #ffb38a;
+}
+
+.high {
+  background: #ff9248;
+}
+
+.super {
+  background: #ff6700;
+}
+
+.selected {
+  border: 3px solid #4718c7;
+}

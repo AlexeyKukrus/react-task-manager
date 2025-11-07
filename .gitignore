@@ -1,24 +1,49 @@
-# Logs
-logs
-*.log
+# === Зависимости ===
+node_modules/
+package-lock.json
+
+# === Сборки (не храним, их генерирует CI/CD) ===
+dist/
+build/
+
+# === Логи ===
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.log
 
-node_modules
-dist
-dist-ssr
-*.local
+# === Переменные окружения (секреты не коммитим) ===
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# === Кэш/артефакты инструментов ===
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.turbo/
+.cache/
+.tmp/
+.vite/
+vite.cache/
+coverage/
+.nyc_output/
+
+# === Файлы/папки IDE ===
+.vscode/
+.idea/
+.vs/
+
+# === Системные файлы ОС ===
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# === Прочее, что не требуется в репозитории/деплое ===
+*.local
